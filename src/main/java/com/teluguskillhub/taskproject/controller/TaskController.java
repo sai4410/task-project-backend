@@ -32,7 +32,7 @@ public class TaskController {
 		return new ResponseEntity<>(taskService.saveTask(userid, taskDto), HttpStatus.CREATED);
 	}
 	
-	//get all task
+	//get all the task
 	@GetMapping("{userid}/tasks")
 	public ResponseEntity<List<TaskDto>> getAllTasks(
 			@PathVariable(name="userid") long userid){
